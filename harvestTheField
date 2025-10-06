@@ -1,0 +1,40 @@
+void harvestTheField()
+{
+    firstHalf();
+    turnRight();
+    moveForward();
+    turnRight();
+    moveForward();
+    firstHalf();
+}
+
+void firstHalf()
+{
+    pickBeeper();
+    repeat (3)
+    {
+        
+        turnRight();
+        moveForward();
+        turnLeft();
+        moveForward();
+        pickBeeper();
+    }
+    moveForward();
+    turnLeft();
+    moveForward();
+    pickBeeper();
+    moveForward();
+    turnLeft();
+    moveForward();
+    pickBeeper();
+    repeat (2)
+    {
+        turnRight();
+        moveForward();
+        turnLeft();
+        moveForward();
+        pickBeeper();
+    }
+    
+}
