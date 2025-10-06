@@ -25,3 +25,39 @@ void repair()
     moveForward();
     
 }
+
+
+# Second Version
+
+void repairTheStreet()
+{
+    while (frontIsClear())
+    {
+        if (rightIsClear())
+        {
+            repair();
+            
+        }
+        else if (!rightIsClear())
+        {
+            moveForward();
+        }
+    }
+    repair();
+}
+
+
+void repair()
+{
+    turnRight();
+    moveForward();
+    dropBeeper();
+    turnAround();
+    moveForward();
+    turnRight();
+    if (frontIsClear())
+    {
+        moveForward();
+    }
+}
+
