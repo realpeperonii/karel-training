@@ -1,0 +1,27 @@
+void repairTheStreet()
+{
+    while (frontIsClear())
+    {
+        if (!rightIsClear())
+        {
+            moveForward();
+        }
+        else if (rightIsClear())
+        {
+            repair();
+        }
+    }
+}
+
+
+void repair()
+{
+    turnRight();
+    moveForward();
+    dropBeeper();
+    turnAround();
+    moveForward();
+    turnRight();
+    moveForward();
+    
+}
