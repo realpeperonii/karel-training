@@ -1,12 +1,15 @@
 void cleanTheRoom()
 {
-    repeat (9)
+    repeat (4)
     {
         run();
         left();
         run();
         right();
     }
+    run();
+    left();
+    run();
 }
 
 void left()
@@ -47,5 +50,3 @@ void run()
         }
     }
 }
-
- # working so far but runs into wall at the end.
