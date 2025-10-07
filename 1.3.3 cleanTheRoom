@@ -1,0 +1,51 @@
+void cleanTheRoom()
+{
+    repeat (9)
+    {
+        run();
+        left();
+        run();
+        right();
+    }
+}
+
+void left()
+{
+    if (onBeeper())  
+    {
+        pickBeeper();
+    }
+    turnLeft();
+    moveForward();
+    turnLeft();
+}
+
+void right()
+{
+    if (onBeeper())
+    {
+        pickBeeper();
+    }
+    turnRight();
+    moveForward();
+    turnRight();
+    
+    
+}
+
+void run()
+{
+    repeat (10)
+    {
+        if (frontIsClear() && !onBeeper())
+        {
+            moveForward();
+        }
+        if (onBeeper())
+        {
+            pickBeeper();
+        }
+    }
+}
+
+ # working so far but runs into wall at the end.
