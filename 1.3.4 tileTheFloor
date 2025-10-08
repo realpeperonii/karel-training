@@ -1,0 +1,23 @@
+void tileTheFloor()
+{
+    repeat (19)
+    {
+        place();
+        turnLeft();
+    }
+    dropBeeper();
+    
+}
+
+void place()
+{
+    repeat (10)
+    {
+        if (!beeperAhead() && frontIsClear())
+        {
+            dropBeeper();
+            moveForward();
+        }
+        
+    }
+}
