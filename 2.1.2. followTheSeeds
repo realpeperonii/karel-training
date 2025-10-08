@@ -7,7 +7,7 @@ void followTheSeeds()
             moveForward();
             pickBeeper();
         }
-        if (!beeperAhead())
+        if (!beeperAhead()) # condition was always false
         {
             turnLeft();
             if (beeperAhead())
