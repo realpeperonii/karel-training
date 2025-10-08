@@ -1,0 +1,27 @@
+void walkTheLabyrinth()
+{
+    repeat (100)
+    {
+        if (frontIsClear())
+        {
+            moveForward();
+        }
+        if (!frontIsClear())
+        {
+            if (rightIsClear())
+            {
+                turnRight();
+            }
+            else if (leftIsClear())
+            {
+                turnLeft();
+            }
+            if (frontIsClear())
+            {
+                moveForward();
+                
+            }
+        }
+    }
+    
+}
