@@ -1,0 +1,24 @@
+void removeTheTiles()
+{
+    pickBeeper();
+    repeat (19)
+    {
+        collect();
+        turnLeft();
+    }
+    moveForward();
+}
+
+void collect()
+{
+    
+    while(beeperAhead())
+    {
+        moveForward();
+        if (onBeeper()) # Condition was always true 
+        {
+            pickBeeper();
+        }
+    }
+}
+
